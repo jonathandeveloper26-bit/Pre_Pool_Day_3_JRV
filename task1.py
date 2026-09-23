@@ -35,22 +35,22 @@ print(position)
 
 #Task 1.8
 p = "abcdefghij"
-print(p[::2][:5][::-1][3:])
+print(p[::-2][:5][::-1][3:])
 # My Guess: 
-# p[::2] -> acegi
-# [:5] -> acegi
-# [::-1] -> igeca
-# [3:] -> ca
-# Final Output: ca
-# Answer: ca - got it right!
+# p[::-2] -> jhfdb
+# [:5] -> jhfdb
+# [::-1] -> bdfhj
+# [3:] -> hj
+# Final Output: hj
+# Answer: hj - got it right!
 
 #Task 1.9
 
 p = "abcdefghij"
 # From what I can see, the length of the string is irrelevant. 
-# -> Just get the 3rd and 1st characters of any string
+# -> Just get the 3rd to last and last characters of any string
 
-print(p[2::-2])
+print(p[-3::2])
 
 #Task 1.10
 str_in = "Duplicate 10x\n"
