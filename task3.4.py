@@ -7,6 +7,8 @@
 # Test "Play your trumpet happily on Nights" -> "Python"
 user_input = input("Enter a Sentence: ")
 
+
+### Long Method
 # Strategy: 
 # Get the Input, iterate through the input to find spaces, take everything before that space and store it in any array as a "word", search for the next space, and so on
 
@@ -33,6 +35,14 @@ for i in range(len(user_input)):
 new_word = ""
 
 # Increments through each word in the words list, extracting the first letter only
+for word in words:
+    new_word+=word[0]
+
+print(new_word)
+
+
+### Short Method - use split
+words = user_input.split(" ")
 for word in words:
     new_word+=word[0]
 
