@@ -3,7 +3,6 @@
 languages = ["Esperanto", "Spanish", "Portuguese", "Italian", "French", "English", "German", "Dutch", "Swedish", "Polish", "Turkish"]
 
 
-
 user_input = input("Enter a String: ").replace(" ", "").lower()
 total_letters = len(user_input) # Total character Count
 
